@@ -1,0 +1,50 @@
+/* Color Variables */
+$color-primary: orange;
+$color-secondary: gray;
+$color-tertiary: royalblue;
+/* Font Size Variables */
+$font-lg: 40px;
+$font-md: 30px;
+$font-sm: 20px;
+
+.nav{
+	background: $color-primary;
+	ul li {
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+		font-size: $font-sm;
+		color: $color-secondary;
+		&:hover{
+			color: $color-tertiary;
+		}
+	}
+}
+
+.heading{
+	color: $color-primary;
+	font-size: $font-lg;
+	background: $color-secondary;
+	text-align:center;
+}
+
+@function fontSize($size){
+	@return $size * 2;
+}
+
+.banner h1{
+	@extend .heading;
+
+	&:hover{
+		background:green;
+	}
+}
+
+.footer h3{
+	@extend .heading;
+}
+
+.banner p{
+	font-size: fontSize($font-sm);
+}

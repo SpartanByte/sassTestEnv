@@ -1,0 +1,50 @@
+/* Color Variables */
+$color-primary: orange;
+$color-secondary: gray;
+$color-tertiary: royalblue;
+/* Font Size Variables */
+$font-lg: 40px;
+$font-md: 30px;
+$font-sm: 20px;
+
+.nav{
+	background: $color-primary;
+
+	ul li {
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+		font-size: $font-sm;
+		color: $color-secondary;
+		&:hover{
+			color: $color-tertiary;
+		}
+	}
+}
+
+/* if not defined, $fontSize will DEFAULT to 50px */
+@mixin headingStyles($fontSize: 50px){
+	font-size: $fontSize;
+	color: $color-secondary;
+	text-align: center;
+}
+
+@mixin transition($param...){
+	transition: $param;
+}
+
+.banner h1{
+	/* $color-secondary: red !global; Global will override the variable declaration above */
+	@include headingStyles($font-lg);
+}
+
+.footer h3{
+	@include headingStyles($font-md);
+	@include transition(color .5s, background 1s);
+
+	&:hover{
+		color: $color-tertiary;
+		background: $color-primary;
+	}
+}

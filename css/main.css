@@ -1,0 +1,31 @@
+/* Color Variables */
+/* Font Size Variables */
+/* line 10, scss/main.scss */
+.nav {
+  background: orange; }
+  /* line 12, scss/main.scss */
+  .nav ul li {
+    list-style: none; }
+  /* line 15, scss/main.scss */
+  .nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: gray; }
+    /* line 19, scss/main.scss */
+    .nav a:hover {
+      color: royalblue; }
+
+/* line 25, scss/main.scss */
+.heading, .banner h1, .footer h3 {
+  color: orange;
+  font-size: 40px;
+  background: gray;
+  text-align: center; }
+
+/* line 39, scss/main.scss */
+.banner h1:hover {
+  background: green; }
+
+/* line 48, scss/main.scss */
+.banner p {
+  font-size: 40px; }

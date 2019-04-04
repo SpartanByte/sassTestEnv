@@ -1,0 +1,20 @@
+{
+  "name": "sassTestEnv",
+  "version": "1.0.0",
+  "description": "Testing environment/code for Cass",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -o css scss/main.scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpartanByte/sassTestEnv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpartanByte/sassTestEnv/issues"
+  },
+  "homepage": "https://github.com/SpartanByte/sassTestEnv#readme"
+}
